@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Forgot Password - FORGE</title>
+  <link rel="stylesheet" href="Forgot.css">
+</head>
+<body>
+
+<header>
+  <nav>
+    <ul>
+      <li><a href="HOME.html">Home</a></li>
+      <li><a href="LOGIN.html">Login</a></li>
+      <li><a href="SIGNIN.html">Sign In</a></li>
+    </ul>
+  </nav>
+</header>
+
+<div class="forgot-wrapper">
+  <h2>Reset Password</h2>
+  <div class="forgot-card">
+    <p>Enter your email and new password</p>
+    <form id="forgot-form" onsubmit="handleForgotPassword(event)">
+      <div class="form-group">
+        <label>Email Address</label>
+        <input type="email" id="forgot-email" required placeholder="Enter your email">
+      </div>
+      <div class="form-group">
+        <label>New Password</label>
+        <input type="password" id="new-pass" required placeholder="New password">
+      </div>
+      <div class="form-group">
+        <label>Confirm Password</label>
+        <input type="password" id="confirm-pass" required placeholder="Confirm password">
+      </div>
+      <button type="submit" class="btn-reset">Reset & Go to Dashboard</button>
+    </form>
+    <a href="LOGIN.html" class="back-login">Back to Login</a>
+  </div>
+</div>
+
+<script src="Forgot%20password.js"></script>
+</body>
+</html>

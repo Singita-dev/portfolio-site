@@ -1,0 +1,94 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #0a1931; /* your dark blue */
+  color: white;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  padding: 15px;
+  background-color: #0a1931;
+}
+
+header nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+header nav ul li a:hover {
+  color: #ff8c00;
+}
+
+.forgot-wrapper {
+  max-width: 500px;
+  margin: 50px auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.forgot-wrapper h2 {
+  color: #ff8c00; /* your safe orange */
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.forgot-card {
+  background-color: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+.forgot-card p {
+  color: #0a1931;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  text-align: left;
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  color: #0a1931;
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+
+.btn-reset {
+  width: 100%;
+  padding: 12px;
+  background-color: #ff8c00; /* your orange */
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.btn-reset:hover {
+  background-color: #e67e00;
+}
+
+.back-login {
+  display: block;
+  margin-top: 15px;
+  color: #0a1931;
+  text-decoration: none;
+  font-size: 14px;
+}

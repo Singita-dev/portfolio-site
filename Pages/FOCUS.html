@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>FORGE - Focus Mode</title>
+        <link href="FOCUS.css" rel="stylesheet" type="text/css"/>
+    </head>
+
+    <style>
+        body {
+            background-image: linear-gradient(rgba(8, 27, 45, 0.58), rgba(8, 27, 45, 0.7)), url("../Images/focusbackground.webp");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            color: white;
+            font-family: "Trebuchet MS", Arial, sans-serif;
+            margin: 0;
+        }
+
+        footer {
+            background-color: rgba(8, 27, 45, 0.85);
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+
+        footer h2 {
+            margin-bottom: 15px;
+        }
+
+        .footer-music {
+            margin: 15px 0;
+        }
+    </style>
+
+    <body>
+        <nav>
+            <ul>
+                <li><a href="HOME.html">Home</a></li>
+                <li><a href="DASHBOARD.html">Dashboard</a></li>
+                <li><a href="FOCUS.html">Focus Mode</a></li>
+                <li><a href="PROGRESS.html">Progress</a></li>
+                <li><a href="CONTACT.html">Contact</a></li>
+            </ul>
+        </nav>
+
+        <div class="focus-container">
+            <h1>Focus Mode</h1>
+            <p>Welcome to Focus Mode! This section helps you stay focused, relaxed, and motivated during your study sessions.</p>
+            <hr>
+
+            <h2>Mood Check</h2>
+            <p>How are you feeling today? Select your mood:</p>
+            <form class="mood-form">
+                <div class="mood-option">
+                    <input type="radio" name="mood" id="happy" value="Happy">
+                    <label for="happy">Happy</label>
+                </div>
+                <div class="mood-option">
+                    <input type="radio" name="mood" id="tired" value="Tired">
+                    <label for="tired">Tired</label>
+                </div>
+                <div class="mood-option">
+                    <input type="radio" name="mood" id="motivated" value="Motivated">
+                    <label for="motivated">Motivated</label>
+                </div>
+                <div class="mood-option">
+                    <input type="radio" name="mood" id="stressed" value="Stressed">
+                    <label for="stressed">Stressed</label>
+                </div>
+                <div class="mood-option">
+                    <input type="radio" name="mood" id="anxious" value="Anxious">
+                    <label for="anxious">Anxious</label>
+                </div>
+                <button type="submit" class="btn-mood">Save Mood</button>
+            </form>
+            <hr>
+
+            <!-- Mood & Activities Table -->
+            <table class="mood-table">
+                <thead>
+                    <tr>
+                        <th>Your Mood</th>
+                        <th>Recommended Activity</th>
+                        <th>Duration</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Happy</td>
+                        <td>Deep focus work on challenging topics</td>
+                        <td>45 mins</td>
+                    </tr>
+                    <tr>
+                        <td>Tired</td>
+                        <td>Take a break and listen to energizing music</td>
+                        <td>15 mins</td>
+                    </tr>
+                    <tr>
+                        <td>Motivated</td>
+                        <td>Tackle most difficult assignments</td>
+                        <td>60 mins</td>
+                    </tr>
+                    <tr>
+                        <td>Stressed</td>
+                        <td>Relaxation exercises and light review</td>
+                        <td>30 mins</td>
+                    </tr>
+                    <tr>
+                        <td>Anxious</td>
+                        <td>Breathing exercises and calming music</td>
+                        <td>20 mins</td>
+                    </tr>
+                </tbody>
+            </table>
+            <hr/>
+
+            <hr/>
+
+            <h2>Choose Music to Help You Concentrate</h2>
+            <p>Select ambient sounds to boost your concentration:</p>
+
+            <p><strong>Lo-fi Music</strong> - Relaxing background beats</p>
+            <p><strong>Nature Sounds</strong> - Forest and rain ambience</p>
+
+            <div class="music">
+                <audio controls>
+                    <source src=".mp3" type="audio/mpeg">
+                </audio>
+                <p><strong>Track 1</strong></p>
+            </div>
+
+           <div class="music">
+                <audio controls>
+                    <source src="../audios/After_Winter_comes_Spring.mp3" type="audio/mpeg">
+                </audio>
+                <p><strong>Track 1</strong></p>
+            </div>
+
+           <div class="music">
+                <audio controls>
+                    <source src="../audios/Irridescent_Mountains.mp3" type="audio/mpeg">
+                </audio>
+                <p><strong>Track 2</strong></p>
+            </div>
+
+           <div class="music">
+                <audio controls>
+                    <source src="../audios/Key_to_the_Highway.mp3" type="audio/mpeg">
+                </audio>
+                <p><strong>Track 3</strong></p>
+            </div>
+
+           <div class="music">
+                <audio controls>
+                    <source src="../audios/Last_Chance.mp3" type="audio/mpeg">
+                </audio>
+                <p><strong>Track 4</strong></p>
+            </div>
+
+           <div class="music">
+                <audio controls>
+                    <source src="../audios/My_everything.mp3" type="audio/mpeg">
+                </audio>
+                <p><strong>Track 5</strong></p>
+            </div>
+
+           <div class="music">
+                <audio controls>
+                    <source src="../audios/My_Piano.mp3" type="audio/mpeg">
+                </audio>
+                <p><strong>Track 6</strong></p>
+            </div>
+
+           <div class="music">
+                <audio controls>
+                    <source src="../audios/Story_of_My_Dream.mp3" type="audio/mpeg">
+                </audio>
+                <p><strong>Track 7</strong></p>
+            </div>
+
+           <div class="music">
+                <audio controls>
+                    <source src="../audios/Thank_God_It_s_Friday.mp3" type="audio/mpeg">
+                </audio>
+                <p><strong>Track 8</strong></p>
+            </div>
+
+           <div class="music">
+                <audio controls>
+                    <source src="../audios/Tip_Your_Hat.mp3" type="audio/mpeg">
+                </audio>
+                <p><strong>Track 9</strong></p>
+            </div>
+
+           <div class="music">
+                <audio controls>
+                    <source src="../audios/Too_Broken_to_Cry.mp3" type="audio/mpeg">
+                </audio>
+                <p><strong>Track 10</strong></p>
+            </div>
+
+            
+            <hr>
+
+            <!--Linked Image-->
+            <div class="focus-image">
+                <p><em>Use these tools to stay focused and motivated</em></p>
+            </div>
+
+            <div class="focus-links">
+                <a href="DASHBOARD.html" class="btn-back">Go back to Dashboard</a>
+                <a href="PROGRESS.html" class="btn-progress">View Your Progress</a>
+            </div>
+        </div>
+
+        <!--Footer with Playlist-->
+        <footer>
+            
+        </footer>
+    </body>
+</html>

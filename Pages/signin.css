@@ -1,0 +1,78 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  min-height: 100vh;
+  color: #c9ebff;
+  
+  /* CLEAR IMAGE - very light overlay only */
+  background-image: 
+    url('../Images/signinbackground.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-color: #0a1930;
+}
+
+/* Add slight glow using your 4 colors but DON'T cover image */
+body::before {
+  content: "";
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: 
+    radial-gradient(circle at top left, rgba(124, 207, 255, 0.25) 0%, transparent 40%),
+    radial-gradient(circle at bottom right, rgba(0, 223, 255, 0.25) 0%, transparent 40%);
+  pointer-events: none;
+  z-index: -1;
+}
+
+nav ul { list-style: none; text-align: center; padding: 25px; margin: 0; }
+nav li { display: inline-block; margin: 5px; }
+nav a {
+  color: #c9ebff; text-decoration: none;
+  border: 1px solid #7ccfff; border-radius: 20px;
+  padding: 8px 18px; font-weight: bold; font-size: 13px;
+  background: rgba(0,30,70,0.6);
+}
+nav a:hover { background: #ff8c00; color: #ff8c00; }
+
+.signup-form {
+  width: 400px; margin: 30px auto;
+  background: rgba(0,30,70,0.75); /* more solid so form is readable but image behind is clear */
+  border: 2px solid #7ccfff; 
+  border-radius: 25px;
+  padding: 25px; 
+  box-shadow: 0 0 20px rgba(124,207,255,0.4);
+  /* REMOVED blur so image behind is sharp */
+}
+
+h1 { color: #c9ebff; text-align: center; }
+p { color: #7ccfff; text-align: center; font-size: 14px; }
+
+.form-group { margin-bottom: 15px; text-align: left; }
+.form-group label { color: #c9ebff; font-weight: bold; font-size: 14px; display: block; margin-bottom: 5px; }
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="tel"],
+.form-group input[type="password"] {
+  width: 90%; padding: 12px; border-radius: 20px;
+  border: 1px solid #7ccfff; background: rgba(255,255,255,0.15); color: #c9ebff;
+}
+
+.checkbox { display: flex; align-items: center; gap: 8px; }
+.checkbox label { margin: 0; }
+
+.btn-signup {
+  width: 95%; padding: 12px; border: none; border-radius: 20px;
+  background-color: #ff8c00; color: white; font-weight: bold; cursor: pointer;
+}
+.btn-signup:hover { background: #c9ebff; color: #0a1930; }
+
+.links a { color: #00dfff; text-decoration: none; }
+.links a:hover { color: #ff8c00; }
+li a:hover{
+    background:#ff8c00;
+    box-color:#ff8c00;
+    box-shadow:0 0 15px #ff8c00;
+    color:#ffffff;
+}

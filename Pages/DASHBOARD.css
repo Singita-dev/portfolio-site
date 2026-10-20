@@ -1,0 +1,70 @@
+{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color:#020514;
+	background-image: url('../Images/Dashbordbackground.jpg');
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	background-attachment: fixed;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	line-height: 1.6;
+	color: #ffffff;
+	min-height: 100vh;
+	padding: 20px;
+}
+
+/* Navigation bar styling */
+header {
+	padding:10px 0 30px 0;
+}
+
+nav ul {
+	list-style:none;
+	display:flex;
+	flex-wrap:wrap;
+	gap:10px;
+	justify-content:flex-start;
+	justify-content:center;
+	align-items: center;
+}
+
+nav a {
+	display:inline-block;
+	color:#ffffff;
+	text-decoration:none;
+	padding:8px 20px;
+	border: 1px solid #7ccfff;
+	background: #0a1932;
+	border-radius:20px;
+	transition:all 0.3s ease;
+	font-weight:500;
+	font-size:12pt;
+}
+
+nav a:hover, nav a.active {
+	background:#ff; 
+	border-color:#ff8c00;
+	color:#ffffff;
+}
+
+/* Page headers */
+h2 {
+	color:#ffffff;
+	text-align:center;
+	margin-top:10px;
+	font-size:40pt;
+	font-weight:600;
+}
+
+h2 + p {
+	text-align:center;
+	color:#ff8c00;
+	margin-bottom:30px;
+	font-size:16pt;
+}
+

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>FORGE - Student Login</title>
+		<style>*{
+ margin:0;
+ padding:0;
+ box-sizing:border-box;
+ font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+ background-image: url("../Images/loginbackground.webp");
+ background-size: cover;
+ background-position: center;
+ background-repeat: no-repeat;
+ background-attachment: fixed;
+ color:white;
+ min-height:100vh;
+}
+
+nav{
+ padding:20px 10px;
+ display:flex;
+ justify-content:center;
+}
+
+nav ul{
+ list-style:none;
+ display:flex;
+ gap:10px;
+ flex-wrap:wrap;
+ justify-content:center;
+}
+
+nav ul li a{
+ display:block;
+ padding:8px 18px;
+ border-radius:25px;
+ border:1.5px solid #7ccfff;
+ color:white;
+ text-decoration:none;
+ font-size:13px;
+ font-weight:bold;
+ text-transform:uppercase;
+ background: rgba(0,0,0,0.25);
+ transition:0.3s;
+}
+
+nav ul li a:hover{
+ background:#ff8c00;
+ border-color:#ff8c00;
+ box-shadow:0 0 15px #ff8c00;
+}
+
+.login-container{
+ width:430px;
+ max-width:90%;
+ margin:30px auto;
+ background: linear-gradient(180deg, rgba(15,45,130,0.95), rgba(0,110,210,0.6));
+ border:2px solid #00d9ff;
+ border-radius:28px;
+ box-shadow:0 0 25px rgba(0,217,255,0.7);
+ padding:40px 35px;
+}
+
+.login-container h1{
+ margin-bottom:25px;
+ font-size:30px;
+}
+
+.form-group{ margin-bottom:18px; }
+.form-group label{ color:#c9e6ff; font-size:14px; font-weight:bold; }
+.form-group input{
+ width:100%;
+ padding:12px 18px;
+ margin-top:6px;
+ border:1.5px solid #7ccfff;
+ border-radius:25px;
+ background: rgba(0,0,0,0.35);
+ color:white;
+ outline:none;
+}
+
+.form-group input:focus{
+ border-color:#ff8c00;
+ box-shadow:0 0 12px #ff8c00;
+}
+
+.btn-login{
+ width:100%;
+ padding:12px;
+ background: linear-gradient(90deg,#ff8c00,#ff5400);
+ border:none;
+ border-radius:25px;
+ color:white;
+ font-weight:bold;
+ cursor:pointer;
+ margin-top:10px;
+}
+
+.btn-login:hover{
+ box-shadow:0 0 20px #ff8c00;
+ transform:scale(1.02);
+}
+
+.login-info{ width:100%; border-collapse:collapse; margin-top:20px; font-size:13px; background:rgba(0,0,0,0.25); border-radius:12px; overflow:hidden; }
+.login-info th{ color:#ff8c00; text-align:left; padding:10px 12px; background:rgba(0,0,0,0.2); }
+.login-info td{ color:#c9e6ff; padding:10px 12px; border-bottom:1px solid rgba(255,255,255,0.07); }
+.links{ text-align:center; margin-top:20px; line-height:1.8; border-top:1px solid rgba(255,255,255,0.1); padding-top:15px; }
+.links a{ color:#7ccfff; text-decoration:none; }
+.links a:hover{ color:#ff8c00; }
+</style>
+
+	</head>
+	<body>
+		<nav>
+			<ul>
+				<li><a href="HOME.html">Home</a></li>
+				<li><a href="LOGIN.html">LogIn</a></li>
+				<li><a href="SIGNIN.html">Sign In</a></li>
+				<li><a href="DASHBOARD.html">Dashboard</a></li>
+			</ul>
+		</nav>
+
+		<div class="login-container">
+			<h1>Student Login</h1>
+			
+			<form>
+				<div class="form-group">
+					<label for="username">Username:</label>
+					<input type="text" id="username" name="username" placeholder="Enter your username" required>
+				</div>
+
+				<div class="form-group">
+					<label for="password">Password:</label>
+					<input type="password" id="password" name="password" placeholder="Enter your password" required>
+				</div>
+
+				<button type="submit" class="btn-login">Login</button>
+			</form>
+
+			<table class="login-info">
+				<thead>
+					<tr>
+						<th>Login Details</th>
+						<th>Information</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Username</td>
+						<td>Your student ID or email</td>
+					</tr>
+					<tr>
+						<td>Password</td>
+						<td>Your secure password</td>
+					</tr>
+					<tr>
+						<td>Remember Me</td>
+						<td>Keep me logged in</td>
+					</tr>
+				</tbody>
+			</table>
+
+			<div class="links">
+				<p><a href="HOME.html">Back to Home</a></p>
+				<p>Don't have an account? <a href="SIGNIN.html">Create an Account</a></p>
+				<p><a href="FORGOT.HTML">Forgot your password?</a></p>
+				<p><a href="CONTACT.html">Need Help?</a></p>
+			</div>
+			
+			
+		</div>
+
+		<script src="login.js"></script>
+	</body>
+</html>

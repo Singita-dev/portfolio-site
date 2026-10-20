@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORGE | Student Hub</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: "Trebuchet MS", Arial, sans-serif;
+            color: white;
+        }
+
+        /* Video background */
+        .video-bg {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+
+        /* Overlay for readability */
+        .overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(8, 27, 45, 0.6);
+            z-index: 0;
+        }
+
+        header, footer, main {
+            position: relative;
+            z-index: 1;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 22px clamp(24px, 6vw, 90px);
+        }
+
+        .brand {
+            color: #f6c453;
+            font-size: 1.4rem;
+            font-weight: bold;
+            letter-spacing: 0.16em;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 12px;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav a {
+            color: white;
+            display: block;
+            padding: 10px 18px;
+            border: 1px solid rgba(255, 255, 255, 0.65);
+            border-radius: 999px;
+            font-weight: bold;
+            text-decoration: none;
+            transition: 0.2s;
+        }
+
+        nav a:hover {
+            background: #ff8c00;
+            border-color: #ff8c00;
+            color: #102a43;
+        }
+
+        .hero {
+            width: min(900px, 100%);
+            margin: auto;
+            padding: 80px 24px 100px;
+            text-align: center;
+        }
+
+        .eyebrow {
+            color: #ff8c00;
+            font-size: 0.82rem;
+            font-weight: bold;
+            letter-spacing: 0.22em;
+            text-transform: uppercase;
+        }
+
+        h1 {
+            margin: 16px 0;
+            font-size: clamp(3rem, 9vw, 6.5rem);
+            line-height: 0.95;
+            letter-spacing: 0.04em;
+        }
+
+        .hero p {
+            max-width: 620px;
+            margin: 0 auto 32px;
+            font-size: clamp(1rem, 2vw, 1.25rem);
+            line-height: 1.7;
+        }
+
+        .cta {
+            display: inline-block;
+            padding: 14px 28px;
+            background: #ff8c00;
+            border-radius: 999px;
+            color: #102a43;
+            font-weight: bold;
+            text-decoration: none;
+            transition: 0.2s;
+        }
+
+        .cta:hover {
+            background: white;
+            transform: translateY(-3px);
+        }
+
+        footer {
+            padding: 18px 24px;
+            text-align: center;
+        }
+
+        footer p {
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- Video background -->
+    <video autoplay muted loop class="video-bg">
+        <source src="../videos/homebackground.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <!-- Overlay -->
+    <div class="overlay"></div>
+
+    <header>
+        <nav>
+            <div class="brand">FORGE</div>
+            <ul>
+                <li><a href="LOGIN.html">Log in</a></li>
+                <li><a href="SIGNIN.html">Sign in</a></li>
+            </ul>
+        </nav>
+        <main class="hero">
+            <div class="eyebrow">Your student hub</div>
+            <h1>WELCOME TO FORGE</h1>
+            <p>Organise your learning, build better study habits, and keep your goals moving forward.</p>
+            <a class="cta" href="SIGNIN.html">Start your journey</a>
+        </main>
+    </header>
+
+    <footer>
+        <p>Go on, Tiger! Keep learning and keep growing.</p>
+    </footer>
+</body>
+</html>

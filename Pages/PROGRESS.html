@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>My Academic Progress - FORGE</title>
+  <link rel="stylesheet" href="Progress.css">
+</head>
+<body>
+  <nav>
+    <ul>
+        <li><a href="DASHBOARD.html">Dashboard</a></li>
+        <li><a href="UPLOAD.html">Upload</a></li>
+        <li><a href="STUDY_TIPS.html">Study Tips</a></li>
+        <li><a href="TIMETABLE.html">Timetable</a></li>
+        <li><a href="FOCUS_MODE.html">Focus Mode</a></li>
+        <li><a href="PROGRESS.html">Progress</a></li>
+        <li><a href="CONTACT.html">Contact</a></li>
+        <li><a href="HOME.html">Logout</a></li>
+    </ul>
+  </nav>
+
+  <div class="progress-wrapper">
+    <h1>My Academic Progress</h1>
+    <p>Track your study progress below. Complete tasks to increase your progress circles!</p>
+
+    <!-- NEW: Allow any student to add any module -->
+    <div class="add-module-box">
+      <input type="text" id="newModuleName" placeholder="Enter module name e.g. Mathematics">
+      <button class="btn-action" onclick="addNewModule()">Add Module</button>
+    </div>
+
+    <!-- Table that grows - not fixed to 3 -->
+    <table class="stats-table">
+      <thead>
+        <tr>
+          <th>Module</th>
+          <th>Progress %</th>
+          <th>Tasks Completed</th>
+          <th>Status</th>
+        </tr>
+      </thead>
+      <tbody id="statsBody">
+        <!-- Modules will be added here by JS -->
+      </tbody>
+    </table>
+
+    <h2>Progress Visualization</h2>
+    <p>Complete your tasks to see your circles grow!</p>
+
+    <!-- Circles container - like your screenshot -->
+    <div id="circleContainer" class="circle-container">
+      <!-- Circles will be added here by JS -->
+    </div>
+
+    <table class="summary-table">
+      <thead><tr><th>Summary</th><th>Details</th></tr></thead>
+      <tbody>
+        <tr><td>Total Tasks Completed</td><td id="totalCompleted">0</td></tr>
+        <tr><td>Overall Progress</td><td id="overallProgress">0%</td></tr>
+        <tr><td>Estimated Completion</td><td id="estimatedTime">30 days</td></tr>
+      </tbody>
+    </table>
+
+    <div class="navigation-links">
+      <a href="DASHBOARD.html" class="btn-back">Back to Dashboard</a>
+      <a href="FOCUS.html" class="btn-focus">Go to Focus Mode</a>
+	  <a href="STUDYTIPS.html" class="btn-focus">Go to Focus Mode</a>
+    </div>
+  </div>
+
+  <script src="progress.js"></script>
+</body>
+</html>

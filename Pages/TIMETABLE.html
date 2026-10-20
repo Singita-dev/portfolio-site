@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Student Timetable - FORGE</title>
+		<link href="TIMETABLE.css" rel="stylesheet" type="text/css"/>
+	</head>
+	<body>
+		<!--Navigation Menu-->
+		<header>
+			<nav>
+				<ul>
+					<li><a href="HOME.html">Home</a></li>
+					<li><a href="LOGIN.html">Login</a></li>
+					<li><a href="DASHBOARD.html">Dashboard</a></li>
+					<li><a href="UPLOAD.html">Upload</a></li>
+					<li><a href="STUDYTIPS.html">Study Tips</a></li>
+					<li><a href="TIMETABLE.html">Timetable</a></li>
+					<li><a href="FOCUS.html">Focus Mode</a></li>				
+					<li><a href="CONTACT.html">Contact</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<div class="timetable-wrapper">
+			<!--Welcome banner-->
+			<h2>Student Timetable</h2>
+			<p>You can add all your modules, specify your weakness and strength amongst your modules. Build your personalized study schedule!</p>
+
+			<div class="timetable-card">
+				<h3>Add a Schedule Entry</h3>
+				<form id="scheduleForm">
+					<!--Days options-->
+					<div class="form-group">
+						<label for="dayInput">Select Day:</label>
+						<select id="dayInput" required>
+							<option value="" disabled selected>Choose a Day</option>
+							<option value="Monday">Monday</option>
+							<option value="Tuesday">Tuesday</option>
+							<option value="Wednesday">Wednesday</option>
+							<option value="Thursday">Thursday</option>
+							<option value="Friday">Friday</option>
+							<option value="Saturday">Saturday</option>
+							<option value="Sunday">Sunday</option>
+						</select>
+					</div>
+
+					<!--Time input-->
+					<div class="form-group">
+						<label for="timeInput">Select Time:</label>
+						<input type="time" id="timeInput" required>
+					</div>
+
+					<!--Module Name input-->
+					<div class="form-group">
+						<label for="ModuleInput">Module Name:</label>
+						<input type="text" id="ModuleInput" placeholder="Enter module name (e.g., Mathematics, Science, etc.)" required>
+					</div>
+
+					<button type="submit" class="btn-add">Add to Timetable</button>
+				</form>
+			</div>
+
+			<div class="timetable-card">
+				<h3>Your Weekly Timetable</h3>
+				<table id="Timetable" class="timetable-main">
+					<thead>
+						<tr>
+							<th>Day</th>
+							<th>Time</th>
+							<th>Module Name</th>
+							<th>Action</th>
+						</tr>
+					</thead>
+					
+					<!--the user will fill the table using the given form-->
+					<tbody>
+						<tr>
+							<td> </td>
+							<td> </td>
+							<td> </td>
+							<td> </td>
+						</tr>
+						
+						<tr>
+							<td> </td>
+							<td> </td>
+							<td> </td>
+							<td> </td>
+						</tr>
+						
+						<tr>
+							<td> </td>
+							<td> </td>
+							<td> </td>
+							<td> </td>
+						</tr>
+						
+						<tr>
+							<td> </td>
+							<td> </td>
+							<td> </td>
+							<td> </td>
+						</tr>
+						
+						<tr>
+							<td> </td>
+							<td> </td>
+							<td> </td>
+							<td> </td>
+						</tr>
+						
+						<tr>
+							<td> </td>
+							<td> </td>
+							<td> </td>
+							<td> </td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+
+			<!-- Linked Image -->
+			<div class="timetable-image">
+				<p><em>Organize your modules effectively with FORGE</em></p>
+			</div>
+
+			<div style="text-align: center; margin-top: 20px;">
+				<a href="DASHBOARD.html" class="btn-back">Back to Dashboard</a>
+		
+	</body>
+</html>

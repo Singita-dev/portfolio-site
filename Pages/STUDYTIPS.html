@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>FORGE - Study Tips</title>
+
+        <style>
+
+               *{
+                margin:0;
+                padding:0;
+                box-sizing:border-box;
+                font-family:Segoe UI, Arial,sans-serif;
+                }
+                body {
+            background-image: linear-gradient(rgba(8, 27, 45, 0.58), rgba(8, 27, 45, 0.7)), url("../Images/studytipsbackground.jpg");
+            background-size:cover;
+            background-position:center;
+            background-attachment:fixed;
+            color:white;
+            min-height: 100vh;
+        }
+
+        nav{
+            padding:20px 10px;
+            display:flex;
+            justify-content:center; /* fixed spelling */
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            flex-wrap:wrap;
+            gap:10px;
+            justify-content:center; /* fixed spelling */
+            max-width:1000px;
+        }
+        
+         nav ul li {
+            list-style:none; /* fixed from list-style;none */
+            border-radius:50px;
+            background:rgba(0,0,0,0.45);
+            border:1.5px solid #c9ebff ; /* fixed missing ) */
+            padding:8px 18px;
+            transition:0.3s;
+        }
+
+        nav ul li a{
+            color: white;
+            text-decoration: none;
+            font-size:12px;
+            font-weight:bold;
+            text-transform:uppercase;
+        }
+
+       nav ul li:hover {
+            background:#ff8c00;
+            border-color:#ff8c00; /* fixed from borger-color */
+            box-shadow:0 0 15px #ff8c00; /* fixed from box-shadow-color */
+            transform:scale(1.05);
+        }
+
+        .tips-container{ width:90%; max-width:1100px; margin:20px auto; background: rgba(0,0,0,0.35); padding:25px; border-radius:15px; }
+        .tips-table{ width:100%; border-collapse:collapse; margin-top:15px; }
+
+        .tips-table th{ color:#ffae33; padding:8px; border-bottom:2px solid #ff8c00; text-align:left; }
+        .tips-table td{ padding:8px; border-bottom:1px solid rgba(255,255,255,0.1); }
+
+       
+        </style>
+    </head>
+
+    <body>
+        <nav>
+            <ul>
+                <li><a href="DASHBOARD.html">Dashboard</a></li>
+                <li><a href="UPLOAD.html">Upload</a></li>
+                <li><a href="STUDY_TIPS.html">Study Tips</a></li>
+                <li><a href="TIMETABLE.html">Timetable</a></li>
+                <li><a href="FOCUS_MODE.html">Focus Mode</a></li>
+                <li><a href="PROGRESS.html">Progress</a></li>
+                <li><a href="CONTACT.html">Contact</a></li>
+                <li><a href="HOME.html">Logout</a></li>
+            </ul>
+        </nav>
+
+        <div class="tips-container">
+            <h1>Motivational Study Tips</h1>
+            <p>Follow these tips to improve your academic performance and achieve your goals:</p>
+
+            <!-- Tips Table -->
+            <table class="tips-table">
+                <thead>
+                    <tr>
+                        <th>Tip #</th>
+                        <th>Study Technique</th>
+                        <th>Expected Benefits</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Create a weekly study timetable and stick to it</td>
+                        <td>Better time management & consistency</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Study in a quiet place with minimal distractions</td>
+                        <td>Increased focus and concentration</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Take short breaks every 30-45 minutes</td>
+                        <td>Maintain mental freshness and energy</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Revise your notes after every lecture</td>
+                        <td>Better retention and understanding</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>Practice using past exam papers</td>
+                        <td>Exam familiarity and confidence</td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>Complete all assignments before the deadline</td>
+                        <td>Better grades and no stress</td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td>Ask your lecturer or tutor when you need help</td>
+                        <td>Clear doubts and better understanding</td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td>Join a study group to learn with classmates</td>
+                        <td>Collaborative learning and new perspectives</td>
+                    </tr>
+                    <tr>
+                        <td>9</td>
+                        <td>Use flashcards to remember important concepts</td>
+                        <td>Efficient memorization of key points</td>
+                    </tr>
+                    <tr>
+                        <td>10</td>
+                        <td>Get at least 7-8 hours of sleep before exams</td>
+                        <td>Better memory retention and performance</td>
+                    </tr>
+                    <tr>
+                        <td>11</td>
+                        <td>Avoid procrastination and study a little every day</td>
+                        <td>Consistent progress and less stress</td>
+                    </tr>
+                    <tr>
+                        <td>12</td>
+                        <td>Eat healthy meals and drink plenty of water</td>
+                        <td>Better health and mental clarity</td>
+                    </tr>
+                    <tr>
+                        <td>13</td>
+                        <td>Turn off social media notifications while studying</td>
+                        <td>Fewer distractions and more focus</td>
+                    </tr>
+                    <tr>
+                        <td>14</td>
+                        <td>Set small daily goals and reward yourself</td>
+                        <td>Motivation and positive reinforcement</td>
+                    </tr>
+                    <tr>
+                        <td>15</td>
+                        <td>Always stay positive and believe in your ability</td>
+                        <td>Confidence and success mindset</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h2>Daily Study Routine</h2>
+            <p>Follow this structured routine daily for maximum effectiveness:</p>
+            <ol class="daily-routine">
+                <li><strong>Attend all lectures</strong> - Don't miss any class</li>
+                <li><strong>Review today's notes</strong> - Consolidate what you learned</li>
+                <li><strong>Practice questions</strong> - Apply concepts through problems</li>
+                <li><strong>Complete homeworks or assignments</strong> - Submit on time</li>
+                <li><strong>Prepare for tomorrow's classes</strong> - Read ahead</li>
+            </ol>
+
+            <!-- Linked Image -->
+            <div class="tips-image">
+                <p><em>Follow these tips with Focus Mode for best results</em></p>
+            </div>
+
+            <div class="tips-contact">
+                <h3>Need More Help?</h3>
+                <p><a href="CONTACT.html">Contact us</a> for personalized study guidance and support.</p>
+            </div>
+
+            <a href="DASHBOARD.html" class="btn-back">Back to Dashboard</a>
+        </div>
+
+        <footer>
+
+        </footer>
+    </body>
+</html>

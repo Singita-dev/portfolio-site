@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>FORGE - Sign In</title>
+  <link rel="stylesheet" href="signin.css">
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="HOME.html">HOME</a></li>
+      <li><a href="LOGIN.html">LOGIN</a></li>
+      <li><a href="SIGNIN.html">SIGN IN</a></li>
+      <li><a href="DASHBOARD.html">DASHBOARD</a></li>
+    </ul>
+  </nav>
+
+  <div class="signup-form">
+    <h1>Create an Account</h1>
+    <p>Start your journey to academic success!</p>
+
+    <form id="signupForm">
+      <div class="form-group">
+        <label for="fullname">Full Name:</label>
+        <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required>
+      </div>
+
+      <div class="form-group">
+        <label for="user-email">Email Address:</label>
+        <input type="email" id="user-email" name="email" placeholder="Enter your email" required>
+      </div>
+
+      <div class="form-group">
+        <label for="user-phone">Mobile Number:</label>
+        <input type="tel" id="user-phone" name="phone" placeholder="Enter your mobile number" required>
+      </div>
+
+      <div class="form-group">
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" placeholder="Create a password" required>
+      </div>
+
+      <div class="form-group checkbox">
+        <input type="checkbox" id="show-password" onclick="togglePassword()">
+        <label for="show-password">Show Password</label>
+      </div>
+
+      <div class="form-group">
+        <label for="confirm-password">Confirm Password:</label>
+        <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirm your password" required>
+      </div>
+
+      <button type="submit" class="btn-signup">Sign Up</button>
+    </form>
+
+    <div class="links">
+      <p>Already have an account? <a href="LOGIN.html">Log In</a></p>
+      <p><a href="HOME.html">Back to Home</a></p>
+    </div>
+
+    <div class="signup-image">
+      <p><em>Create your account to get started</em></p>
+    </div>
+  </div>
+  
+  <form onsubmit="handleSignIn(event)">
+  <!-- your name, email, password inputs -->
+  <button type="submit">Sign In</button>
+</form>
+
+<script src="JS/SIGNIN.js"></script>
+
+  <script src="signin.js"></script>
+</body>
+</html>
