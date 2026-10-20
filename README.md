@@ -1,2 +1,2 @@
 # portfolio-site
-my fist full website
+my first full website
